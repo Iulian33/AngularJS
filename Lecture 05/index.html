@@ -5,11 +5,13 @@
     <script src="angular.min.js"></script>
     <script src="app.js"></script>
 </head>
-<body>
-<h1>Hello coursera here again With you. </h1>
+<body ng-app="myFirstApp">
+<h1>My First Angular App</h1>
 
-<div ng-controller="firstFunctionality">
-
+<div ng-controller="newController">
+<h1>{{sayHello()}}</h1>
+    <input type="text" ng-model="name">
+    inside my input is : {{name}}
 </div>
 </body>
 </html>
